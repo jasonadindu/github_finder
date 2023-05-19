@@ -9,7 +9,7 @@ import IconCompany from "./icons/iconcompany";
 import Notfound from "./assets/not found.png";
 
 import { githubApiUrl } from "./components/Search";
-import { githubApiRepoUrl } from "./components/Repo";
+//import { githubApiRepoUrl } from "./components/Repo";
 
 
 function App() {
