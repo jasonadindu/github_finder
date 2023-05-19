@@ -1,0 +1,320 @@
+/* dark background */
+/* light background */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+}
+
+body div.github-app {
+  background: #f6f8ff;
+  color: #2b3442;
+  min-height: 100vh;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 1.3em;
+}
+
+body div.github-app.dark {
+  background: #141d2f;
+  color: #ffffff;
+}
+
+body div.github-app.dark div.container nav.nav button.toggle-theme {
+  color: #ffffff;
+}
+
+body div.github-app.dark div.container nav.nav button.toggle-theme:hover {
+  color: #90a4da;
+}
+
+body div.github-app.dark div.container nav.nav button.toggle-theme:hover svg path,
+body div.github-app.dark div.container nav.nav button.toggle-theme:hover svg g {
+  fill: #90a4da;
+}
+
+body div.github-app.dark div.container main.main-container div.search-container,
+body div.github-app.dark div.container main.main-container section.search-content {
+  background: #1e2a47;
+}
+
+body div.github-app.dark div.container main.main-container div.search-container input[type="text"] {
+  color: #ffffff;
+}
+
+body div.github-app.dark div.container main.main-container section.search-content section.user-details div.repo-details {
+  background: #141d2f;
+}
+
+body div.github-app.dark div.container main.main-container section.search-content div.socials span.social svg path,
+body div.github-app.dark div.container main.main-container section.search-content div.socials span.social svg g {
+  fill: #ffffff;
+}
+
+body div.github-app.dark div.container main.main-container section.search-content div.socials span.social a {
+  color: #ffffff !important;
+}
+
+body div.github-app div.container nav.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.2em 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+          cursor: pointer;
+}
+
+body div.github-app div.container nav.nav button.toggle-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5em;
+  background: transparent;
+  cursor: pointer;
+}
+
+body div.github-app div.container nav.nav button.toggle-theme span {
+  margin-right: 0.5em;
+}
+
+body div.github-app div.container main.main-container {
+  margin-top: 1.5em;
+}
+
+body div.github-app div.container main.main-container div.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  margin: 1.7em 0;
+}
+
+body div.github-app div.container main.main-container div.search-container input[type="text"] {
+  padding: 1.2em 1.3em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 0.9em;
+  background: transparent;
+}
+
+body div.github-app div.container main.main-container div.search-container button.btn {
+  padding: 1.3em 1.7em;
+  background: #0079ff;
+  color: #ffffff;
+  border-radius: 15px;
+ 
+}
+
+body div.github-app div.container main.main-container div.search-container button.btn:hover {
+  background: #60abff;
+}
+
+body div.github-app div.container main.main-container div.search-container,
+body div.github-app div.container main.main-container section.search-content {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+body div.github-app div.container main.main-container section.search-content {
+  background: #ffffff;
+  padding: 1.2em;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img img" "details details";
+  gap: 15px;
+  cursor: pointer;
+ 
+}
+
+body div.github-app div.container main.main-container section.search-content div.img-head-container {
+  grid-row: 1;
+  grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+ 
+}
+
+body div.github-app div.container main.main-container section.search-content div.img-head-container div.img-container {
+  margin-right: 15px;
+}
+
+body div.github-app div.container main.main-container section.search-content div.img-head-container div.img-container img {
+  height: 70px;
+  width: 70px;
+  border-radius: 110px;
+}
+
+body div.github-app div.container main.main-container section.search-content div.img-head-container header.head {
+  margin-bottom: 1.5em;
+}
+
+body div.github-app div.container main.main-container section.search-content div.img-head-container header.head div.head-left p.username {
+  color: #0079ff;
+  font-weight: bold;
+  margin: 0.2em 0;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details {
+  grid-row: 2;
+  grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: details;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details p.bio {
+  margin-bottom: 1.4em;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details div.repo-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1.3em 0;
+  background: #f6f8ff;
+  border-radius: 15px;
+  margin-bottom: 1.3em;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details div.repo-details div.r-details {
+  text-align: center;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details div.socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details div.socials span.social {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details div.socials span.social a {
+  color: #2b3442;
+}
+
+body div.github-app div.container main.main-container section.search-content section.user-details div.socials span.social svg {
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 760px) {
+  body div.github-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body div.github-app div.container {
+    width: 573px;
+  }
+  body div.github-app div.container main.main-container section.search-content div.img-head-container div.img-container img {
+    height: 117px;
+    width: 117px;
+  }
+  body div.github-app div.container main.main-container section.search-content section.user-details div.socials {
+    
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body div.github-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body div.github-app div.container {
+    width: 730px;
+  }
+  body div.github-app div.container main.main-container section.search-content {
+    padding: 2em;
+    gap: 0;
+        grid-template-areas: "img img"
+ ". details";
+  }
+  body div.github-app div.container main.main-container section.search-content div.img-head-container header.head {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body div.github-app div.container main.main-container section.search-content div.img-head-container div.img-container {
+    margin-right: 25px;
+    text-align: center;
+    width: 150px;
+  }
+  body div.github-app div.container main.main-container section.search-content div.img-head-container div.img-container img {
+    height: 117px;
+    width: 117px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
